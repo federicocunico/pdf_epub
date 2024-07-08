@@ -92,7 +92,7 @@ def postprocess_text(sentences):
     # Step 2: Fix quotes in the text
     processed_text = fix_quotes(joined_sentences)
     
-    processed_text = processed_text.replace("“", "\"").replace("”", "\"" )
+    processed_text = processed_text.replace("“", "\"").replace("”", "\"" ).replace('‘', "'").replace('’', "'" )
     return processed_text
 
 def pick_folder():
@@ -137,7 +137,7 @@ if __name__ == "__main__":
 
     single_line_text = postprocess_text(all_texts)
 
-    with open("output.txt", "w") as f:
+    with open("output.txt", "w", encoding="utf-8") as f:
         # for text in all_texts:
         #     f.write(text + " ")
         f.write(single_line_text)
