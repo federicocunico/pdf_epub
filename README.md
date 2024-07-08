@@ -36,6 +36,12 @@ Linux: `apt-get install tesseract-ocr`
 pip install pyautogui Pillow fpdf2 imagehash Pillow keyboard
 ```
 
+### For translating
+```
+pip install googletrans==4.0.0-rc1
+```
+
+
 
 ## Running 
 First of all, run `get_images.py` 
