@@ -26,6 +26,13 @@ def create_pdf(input_file, output_pdf):
     pdf.output(output_pdf)
 
 # File paths
+input_file = 'output.txt'
+output_pdf = 'output_with_roboto.pdf'
+
+# Generate PDF
+create_pdf(input_file, output_pdf)
+
+
 input_file = 'output.ita.txt'
 output_pdf = 'output_ita_with_roboto.pdf'
 
