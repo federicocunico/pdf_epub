@@ -111,13 +111,15 @@ def pick_folder():
 
 
 if __name__ == "__main__":
+
+    FOLDER_WITH_IMAGES = "test"
+
     ocr = "tesseract"
     lang = "en"
     reader = init_ocr(ocr, lang)
 
-    dst = "test"
 
-    files = glob(f"{dst}/*.png")
+    files = glob(f"{FOLDER_WITH_IMAGES}/*.png")
     files.sort()
     assert len(files) > 0, "No images found in the folder"
 
